@@ -1,4 +1,5 @@
 #include <time.h>
+#include <stdlib.h>
 
 char * password(char * line)
 {
@@ -11,8 +12,7 @@ char * password(char * line)
 		else if (rand() % 100 > 67)
 			line[i] = rand() % ('z' - 'a' + 1) + 'a';
 		else
-			line[i] = rand() % ('Z' - 'A' + 1) + 'A';
-		
+			line[i] = rand() % ('Z' - 'A' + 1) + 'A';		
 	}
 	now = clock();
 	while (clock() < now + CLOCKS_PER_SEC);

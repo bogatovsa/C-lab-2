@@ -1,3 +1,5 @@
+#include <string.h>
+
 char* process(char* line)
 {
 	char temp = 0;
